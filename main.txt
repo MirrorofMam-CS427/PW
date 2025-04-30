@@ -1,0 +1,269 @@
+Course 1: Configure a Budget in AWS
+Step 1: After creating an account in AWS, search for and open Billing and Cost Management.
+Step 2: Navigate to the Budgets section in the left-hand menu under Budgets and Planning.
+Step 3: Click on the Create Budget option.
+Step 4: Under Choose budget type, Select Use a Template from Budget setup and Monthly Cost Budget from the Templates section.
+Step 5: Give the Budget name, Budget Amount and the Email Recipients and Click on Create Budget.
+Step 6: The Budget is created successfully.
+
+Course 2: Create MFA for Authentication.
+Step 1: At first Go to Security Credentials for creating MFA.
+Step 2: Then Click on Assign MFA to create an MFA code.
+Step 3: Then set the device name like SM_MFA_N and select the MFA device option as Authenticator App.
+Step 4: Then scan the QR code in Google Authenticator App and type two consecutive codes for security reasons.
+Step 5: The MFA is created successfully.
+Step 6: Then sign out. The next step is to log in using Root User then give the email id.
+Step 7: Give the password.
+Step 8: Provide the MFA code.
+Step 9: The login process is complete and user is take to the console Home page.
+
+Course 3: Create IAM User and give full access to S3.
+Step 1: Click on IAM to create an IAM user.
+Step 2: Go to Users under Access management.
+Step 3: Click on Create User.
+Step 4: Select User name and click on the check box. Click on Custom password and create your own password and press next.
+Step 5: Under the Set Permissions category, Click Attach Policies Directly and Click on AmazonS3FullAccess and then press next.
+Step 6: Click on Create User.
+Step 7: User is created successfully and download the csv file.
+Step 8: Again Login as IAM User by giving the Username and the Password.
+Step 9: Modify the old password for convenience.
+Step 10: The Login process of IAM User is successful.
+Step 11: View the status of IAM User as a Root User.
+
+Course 4 : Create a private bucket in AWS. Upload a file and check by presigned URL whether you can access the file or not.
+Step 1: After login into the account, search for S3 in the search bar and click on it.
+Step 2: Click on Create Bucket.
+Step 3: Give the Name of the bucket as per the naming rules and click on ACLs enabled option. Block the public access and click on Create Bucket.
+Step 5: The Private Bucket is created successfully.
+Step 6: Click on the bucket and select the upload option to upload a file.
+Step 7: Click on Add Files.
+Step 8: This will browse into the files and folders of the PC, select the file to be uploaded and click on Open.
+Step 9: Then click on Upload.
+Step 10: The file is uploaded successfully and the status and details of the uploaded file is also visible.
+Step 11: Now click on the uploaded file and then click on Object Actions and select Share with Presigned URL.
+Step 12: A dialogue box appears, give the access time and click on Create Presigned URL.
+Step 13: Select the Copy Presigned URL from the top right corner of the appeared box.
+Step 14: Open a new Window and paste the URL. The file is visible and accessible.
+Step 15: After the Access time gets over, again try to access the file but it will not be accessible.
+
+Course 5 : Create a public Bucket in AWS. Upload a file and give the necessary permission to check whether the file URL is working.
+Step 1: After login into the account, search for S3 in the search bar and click on it.
+Step 2: Click on Create Bucket.
+Step 3: Give the Name of the bucket as per the naming rules and click on ACLs enabled option. UnBlock the public access and tick the acknowledgement checkbox and click on Create Bucket.
+Step 5: The Public Bucket is created successfully.
+Step 6: Click on the bucket and select the upload option to upload a file.
+Step 7: Click on Add Files.
+Step 8: This will browse into the files and folders of the PC, select the file to be uploaded and click on Open.
+Step 9: Then click on Upload.
+Step 10: The file is uploaded successfully and the status of the file is also visible.
+Step 11: Now, click on the uploaded file then click on Permissions.
+Step 12: Here, click on Edit.
+Step 13: Allow the Read Public Access of Objects and Object ACL for Everyone and click on Saves Changes.
+Step 14: Copy the Object URL and paste on a new Window. The file is visible and accessible.
+
+ASSIGNMENT 6 : Upload a Static Website on S3.
+Step 1: After login into the account, search for S3 in the search bar and click on it.
+Step 2: Click on Create Bucket.
+Step 3: Give the Name of the bucket as per the naming rules and click on ACLs enabled option. UnBlock the public access and tick the acknowledgement checkbox and click on Create Bucket.
+Step 5: The Public Bucket is created successfully.
+Step 6: Click on the bucket and select the upload option to upload a file.
+Step 7: Click on Add Files.
+Step 8: This will browse into the files and folders of the PC, select the file to be uploaded and click on Open.
+Step 9: Then click on Upload.
+Step 10: The file is uploaded successfully and the status of the file is also visible.
+Step 11: Now, click on the home.html file and then click on Permissions.
+Step 12: Here, click on Edit.
+Step 13: Allow the Read Public Access of Objects and Object ACL for Everyone and click on Save Changes.
+Step 14: Now, click on the next.html file and then click on Permissions.
+Step 15: Under the Edit option, Allow the Read Public Access of Objects and Object ACL for Everyone and click on Save Changes.
+Step 16: Now go to the bucket and click on Properties.
+Step 17: Scroll down to the Static Website Hosting option and click on Edit.
+Step 18: Enable the Static Website Hosting and enter the name of the default page of the website and click on Save Changes.
+Step 19: The static website hosting is edited successfully.
+Step 20: Go to the Objects section of the bucket and click on home.html
+Step 21: Copy the Object Url of home.html
+Step 22: Open a new Window and paste the Object URL. The file is visible and accessible.
+Step 23: Click on Google button. The webpage of Google will appear.
+Step 24: Return to the Home page and click on Next button. This will redirect to the next.html page.
+
+Course 7: Hosting a website on EC2.
+Step 1: After login into the account, Search for EC2 in the Search bar.
+Step 2: Click on Launch Instance.
+Step 3: The EC2 Dashboard opens up. Click on Launch Instance.
+Step 4: Scroll down to Key pair login and click on Create new Key pair. A dialog box appears, fill the box as follows.
+Step 5: Give a Name of the Instance and select Ubuntu as the OS and allow the necessary settings as follows. Then click on Launch Instance.
+Step 6: The EC2 dashboard opens up with the updated status of the Resources. Here click on the Instances.
+Step 7: Click on the check box of the instance and the details of the instance is visible.
+Step 8: Now to create a connection between the instance (server) and the client, we need to use a third party application Bitvise SSH Client. After installing the app, the following Window appears.
+Step 12: The client key is now visible. Close the following window.
+Step 13: Now fill the details as follows and click on login.
+Step 9: From the above dialog box, click on Client key manager. The following dialog box appears. Click on import.
+Step 14: The following window appears, click on Accept and Save.
+Step 10: Now select the file containing the client key and click on open.
+Step 11: The following appears, click on import.
+Step 15: The login process is successful. Now click on New terminal console from the below window.
+Step 16: Type the command sudo apt-get update then press enter. Then wait till the process completes.
+Step 17: Type the command sudo apt-get upgrade and press enter. Type yes the hit enter. Then wait till the process completes.
+Step 18: Type the command sudo apt-get install nginx and press enter. Type yes the hit enter. Then wait till the process completes.
+Step 19: Now check whether the server is connected by pasting the ipv4 address of your created instance into the web browser. The following page denotes successful server connection.
+Step 20: Now open Bitvise again, click on New SFTP window.
+Step 22: Now set the path of the Remote files as shown in the picture below and minimize the window.
+Step 23: Open the terminal again and type the following command.
+Step 24: Now open SFTP window of Bitvise again and drag the home.html, home.css and next.html files from local files to remote files. Rename the home.html file as index.html
+Step 21: The following page appears.
+Step 25: Now reload the web browser where the server was running and the web page is visible to the client side as well. This denotes that the website hosting is successful.
+Step 26: Now click on Google, it will redirect to the web page of google.
+Step 27: Go to the home page again and click on Next. It will redirect to the next.html page.
+
+Course 8: Deploy a project from a local machine to GitHub and vice versa.
+Step 1: Create a GitHub Account and login. The GitHub Dashboard opens up, Click on Create Repository/New (In case of Blank / Existing Repository) or Click on Your Repository from the Profile section and then click on Create Repository/New.
+Step 2: Give a name of the Repository and keep rest of the fields as it is and then click on Create Repository.
+Step 3: The Repository gets created. Now copy the HTTPS URL of the Repository from the Quick setup section and save it to the clipboard for future reference.
+Step 4: Now Create a folder in the local machine and insert a file into it. Right click on the white space of the folder and click on Open Git Bash here option.
+Step 5: The Git Bash terminal opens up. Give the command step by step as mentioned in the images -
+  	git init : The git init command is used to create a new Git repository. It creates a hidden .git folder that stores all the repository-related information, allowing you to track changes, commit files, and collaborate using Git.
+  	git add . : The git add . command stages all changes (new, modified, and deleted files) in our repository for the next commit.
+  	git config --global user.email “your@email.com”: The git config --global user.email command followed by our email id sets it as the email address that will be associated with our commits globally across all Git repositories on our system. 
+  	git config --global user.name “Your_GH_Uname” : The git config --global user.name command followed by our GitHub Username sets it as the username that will be associated with our Git commits globally across all repositories on our system.
+  	git remote add origin <repository-URL> : The git remote add origin < repository-URL > command is used to link your local Git repository to a remote repository. <repository-URL> is the url of the GitHub Repository which has been previously copied and saved into the clipboard as mentioned in Step 3.
+  	git commit -m “message” : The git commit -m command is used to create a commit with a message in Git. This saves the staged changes into the repository history.
+  	git push -u origin master : The git push -u origin master command is used to push our local commits to a remote repository and set the upstream branch for future pushes and pulls. After giving this command, we are first taken to the GitHub sign-in page where after clicking the Sign-in using browser option, the files gets successfully pushed into the GitHub Repository from our local machine. 
+Step 6: The file is successfully uploaded into our GitHub Repository. Now click on Code. After clicking on Code, Click on Local and then copy the HTTPS URL and save it to the clipboard for future reference.
+Step 7: Now create another folder in local machine. Right click on white space, and then click on Open Git Bash here.
+Step 8: The Git Bash terminal opens up. Give the command step by step as follows-
+  	git init : The git init command is used to create a new Git repository. It creates a hidden .git folder that stores all the repository-related information, allowing you to track changes, commit files, and collaborate using Git.
+  	git clone <repository-URL> : The git clone <repository-URL> command is used to copy an existing Git repository from a remote source to our local machine. It downloads the entire repository, including its history and branches. <repository-URL> is the code url which has been copied as mentioned in Step 6.
+Step 9: The Git Repository has been successfully copied into our local machine. 
+
+Course 9: Deploy a project from GitHub to EC2.
+Step 1: After login into GitHub account, go to your profile section and click on your ‘Settings’.
+Step 5: Give a suitable Note, then tick on the check boxes then click on ‘Generate token’.
+Step 2: Now click on ‘Developer settings’.
+Step 3: Under ‘Personal access tokens’, click on ‘Tokens (classic)’.
+Step 4: Under ‘Generate new token’, click on ‘Generate new token (classic)’.
+Step 6: Copy the generated token and save it on the clipboard.
+Note: After that upload and commit a .js file along with .json file (index.js and Package.json).
+Step 7: Login to your AWS account and search for EC2 and click on it.
+Step 8: Then click on ‘Launch Instance’.
+Step 9: Scroll down to ‘Key pair (login)’ and click on ‘Create new key pair’. A dialog box appears, fill the box as follows.
+Step 10: Give a Name of the Instance and select Ubuntu as the OS and allow the necessary settings as follows. Then click on ‘Launch Instance’.
+Note: Click on the check box of the instance in the dashboard section, the details of the instance is visible.
+Note: Now to create a connection between the instance (server) and the client, we need to use a third-party application Bitvise SSH Client. After installing the app a window will appears (like step 15 or 17).
+Step 11: From that click on ‘Client key manager’. The following dialog box appears. Click on ‘Import’.
+Step 17: The login process is successful. Now click on ‘New terminal console’ from the below window.
+Step 12: Now select the file containing the client key and click on ‘Open’.
+Step 13: The following appears, click on ‘Import’.
+Step 18: Then a terminal will be open and run the command “sudo apt-get update”. Then wait till the process completes.
+Step 14: The client key is now visible. Close the following window.
+Step 15: Now fill the details as follows and click on login.
+Step 19: Run the command “sudo apt-get upgrade”. Then type yes the hit enter. Then wait till the process completes.
+Step 20: Run the command “sudo apt-get install nginx”. Type yes, the hit enters. Then wait till the process completes.
+Step 16: The following window appears, click on ‘Accept and Save’.
+Step 21: Now run the command “git clone <Repository link>”. In case of private GitHub repository, we need to login into the terminal using the GitHub user name and the personal access token.
+Step 22: Now run the command “cd <Repository folder name>”.
+Step 23: Now run the command
+“curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash –”.
+Step 24: Now run the command “sudo apt install nodejs”.
+Step 26: Now give the command “node <.js file>” and press enter. The Server gets started.
+Step 25: Now run the command “npm install”.
+Step 27: Now again go to the EC2 instance and click on ‘Security’. Then under the Security group click on the blue coloured line.
+Step 28: Click on ‘Edit inbound rules’.
+Step 29: Click on ‘Add rule’. Give the rule type of “Custom TCP” & Port range at 4000 and rest of the fill as bellow image and click on ‘Save rules’.
+Step 30: Open a browsing window and give the “<instance IP address>:4000” and hit enter. The web page (.js file) is seen.
+
+Course 10: Deploy a project from GitHub to EC2 by creating a new security group and user data.
+Note: In case of a private GitHub repository we need to create a personal access token which is shown in Assignment 9 (Step 1 to Step 6)
+Step 1: Login to your AWS account and search for EC2 (Like Assignment 9) and go to the EC2 Dashboard. Click on Security Groups.
+Step 2: Click on Create Security Group.
+Step 3: Give a suitable name and description. Add the HTTP, HTTPS, SSH and Custom TCP Inbound Rules as follows and Click on Create Security Group.
+Step 4: Now go to EC2 Dashboard again and click on Launch Instance.
+Step 5: Give a Name of the Instance and select Ubuntu as the OS, select an existing key Pair and Existing Security Group (Which was created in the previous steps) and Under Advanced Settings and User Data write the commands as given in the image and then click on Launch Instance.
+Note: Click on the check box of the instance in the dashboard section, the details of the instance is visible.
+Note: Now to create a connection between the instance (server) and the client, we need to use a third-party application Bitvise SSH Client. After installing the app a window will appears (like step 11 or 13).
+Step 7: From that click on ‘Client key manager’. The following dialog box appears. Click on ‘Import’.
+Step 10: The client key is now visible. Close the following window.
+Step 8: Now select the file containing the client key and click on ‘Open’.
+Step 9: The following appears, click on ‘Import’.
+Step 11: Now fill the details as follows and click on ‘login’.
+Step 12: The following window appears, click on ‘Accept and Save’.
+Step 14: Now go to the GitHub repository click on code and copy the http link as shown in the image given below.
+Step 13: The login process is successful. Now click on ‘New terminal console’ from the below window.
+Step 15: Now run the command “git clone <Repository link>”. In case of private GitHub repository, we need to login into the terminal using the GitHub user name and the personal access token.
+Step 16: Now give the command “cd <Repository folder name>” and press enter.
+Step 17: Now give the command “npm install” and press enter.
+Step 18: Now give the command “node <.js file>” and press enter. The Server gets started.
+Step 19: Open a new window give the “Instance IP address:4000” and press enter. The web page is seen.
+
+Course 11: Build scaling plans in AWS that balance the load on different EC2 instances.
+Step 1: Login to your AWS account and go to ‘Launch Templates’ under Instances of EC2. Then click on ‘Create launch templates’.
+Step 2: Fill up the details as follows and click on ‘Create launch templates’.
+Step 3: Now go to on ‘Auto Scaling Groups’ under Auto Scaling. Then Click on ‘Create Auto Scaling group’.
+Step 4: Fill the details as per the image and click on ‘Next’.
+Step 7: Fill the details as per the image and click on ‘Next’.
+Step 5: Fill the details as per the image and click on ‘Next’.
+Step 6: Fill the details as per the image and click on ‘Next’.
+Step 8: Keep everything as it is and click on ‘Next’.
+Step 9: Keep everything as it is and click on ‘Next’.
+Step 10: Now check the Review; click on ‘Create Auto Scaling group’.
+Step 11: After creating Auto Scaling group, Instances create automatically.
+Step 12.a: Click an instance; copy IPv4 address from Instance details.
+Step 13.a: Click another instance; copy IPv4 address from the details.
+Step 12.b: Now using the IP Address login to the Bitwise SSH Client and Open the Terminal give the command ‘nano infil.sh’.
+Step 13.b: Now using the IP Address login to the Bitwise SSH Client and Open the Terminal give the command ‘nano infil.sh’.
+Step 12.c: After opening nano editor type the code as given; then press ‘Ctrl+O’ & hit enter to save and then press ‘Ctrl+X’ to exit.
+Step 13.c: After opening nano editor type the code as given; then press ‘Ctrl+O’ & hit enter to save and then press ‘Ctrl+X’ to exit.
+Step 12.d: Run the command ‘chmod +x infil.sh’ and ‘./infil.sh’ respectively.
+Step 13.d: Run the command ‘chmod +x infil.sh’ and ‘./infil.sh’ respectively.
+Step 12.e: The file runs into an infinite loop.
+Step 13.e: The file runs into an infinite loop.
+Step 14: Now select two instances and go to the Monitoring section, some graphs will appear.
+
+Course 12: Deploy and run the project in AWS without using the port.
+Note: Login to your AWS Account. And do as mentioned in Assignment 10.
+Step 1: First Go to root using ‘cd ~ ’and then change the directory using ‘cd /etc/nginx/sites-available’. After that run ‘sudo nano default’ command as follows.
+Step 3: Modify the location portion as given below. Then press ‘ctrl+O’ and hit Enter which will save the modified portion. Then press ‘ctrl+X’ to exit from the file editor.
+Step 2: The following file opens up in nano editor.
+Step 4: Now run the command ‘sudo chmod 777 default ’ to give all users full permission (read, write, execute) to the file and then ‘sudo systemctl restart nginx ’ to restart the nginx. After that change the directory to git cloning directory by ‘cd ~ ’ and ‘cd <directory name>/ ’. Then start the server using ‘node index.js ’ command.
+Step 6: Now go to a new web browsing page and paste the IP Address of your Instance. The web page(index.js) is running successfully without using any port (4000).
+
+Course 13: Create a work mail for your organization.
+Step 1: Login to your AWS Account and Search for ‘Amazon WorkMail’ and click on it.
+Step 2: As Asia Pacific (Mumbai) does not support Amazon WorkMail, Click on ‘United States (N. Virginia)’.
+Step 3: Click on ‘Create Organization’.
+Step 4: Choose ‘Free test domain’ from Email domain section and give an Alias name (tiofficials) and click on ‘Create organization’.
+Step 5: Now click on your Organization name (tiofficials) under Organizations.
+Step 6: Click on ‘Users’ and under that click on ‘Add user’.
+Step 7: Give the User Details and Password Setup as per your convenience and click ‘Add user’.
+Step 8: Check whether user is ‘Enabled’.
+Step 9: Now goes the User Organization and Click on the URL of the ‘Amazon WorkMail web application’.
+Step 10: Give the Username and Password.
+Step 11: Your WorkMail open up. Now compose a mail and send it.
+Step 12: Mail is successfully sent which is visible in the ‘Sent Items’.
+Step 13: The mail is received in the destination Email Address. Now give a reply to the received mail and send it.
+Step 14: The mail is replied successfully.
+Step 15: The Reply mail is received in your WorkMail which is visible in the ‘Inbox’. Then click on the mail for see the details.
+
+Course 14: Create an Elastic IP for an Instance.
+Step 1: Go to the instance and Note the Public IPv4 Address.
+Step 2: Now Under ‘Instance State’, Click on ‘Stop Instance’ and you will notice that the Public IPv4 Address gets blank.
+Step 3: Now again Under ‘Instance State’, Click on ‘Start Instance’. You will notice that the Public IPV4 Address has changed.
+Step 4: Now under ‘Network and Security’, click on ‘Elastic IPs’. Click on ‘Allocate Elastic IP address’.
+Step 6: Now click on ‘Allocate’.
+Step 7: Now select the ‘Elastic IP Address’, under the ‘Actions’, click on ‘Associate Elastic IP address’.
+Step 8: Select the ‘running instance’ and ‘Private IP Address’ and click on ‘Associate’.
+Step 9: The Instance ID is now Associated with the Elastic IP.
+Step 10: Now again go to the Instance and Note the Public IPv4 Address.
+Step 11: Now Under ‘Instance State’, click on ‘Stop Instance’ and you will notice that the Public IPv4 Address remains same.
+Step 12: Now again Under Instance State, Click on Start Instance. You will notice that the Public IPV4 Address remains same.
+
+Course 15: Create a Server less computing service.
+Step 1: login to your account and search for ‘Lambda’ and click on it.
+Step 2: Click on ‘Create a function’.
+Step 3: Fill all the details and click on ‘Create function’.
+Step 4: Modify the code as per the requirement and click on ‘Deploy’.
+Step 6: The event is created and now click on ‘Test’. Check for successful execution message.
+Step 5: Now, Go to ‘Test’ and give the event details and click on ‘Save’.
+Step 8: Select ‘None’ as ‘Auth Type’ and click on ‘Save’.
+Step 7: Go to ‘Configuration’ and click on ‘Function URL’. Then click on ‘Create Function URL’.
+Step 9: Click on the ‘Function URL’.
+Step 10: A window in the browser opens up and the Output of the function is visible.
